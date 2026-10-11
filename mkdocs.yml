@@ -1,0 +1,101 @@
+site_name: AI Infrastructure Engineering
+site_url: https://manmeet3591.github.io/ai-infra-roadmap
+site_author: Manmeet Singh
+site_description: >-
+  A hands-on engineering journal working through the full AI Infrastructure
+  stack — from CUDA kernels to multi-node serving clusters.
+
+repo_name: manmeet3591/ai-infra-roadmap
+repo_url: https://github.com/manmeet3591/ai-infra-roadmap
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Roadmap:
+    - Stage 1 — Systems & GPU Foundations: stage-01-systems-gpu-foundations.md
+    - Stage 2 — Transformer Inference Physics: stage-02-transformer-inference-physics.md
+    - Stage 3 — Serving Engines & Batching: stage-03-serving-engines-batching.md
+    - Stage 4 — KV-Cache & Memory: stage-04-kv-cache-memory.md
+    - Stage 5 — Quantization & Compression: stage-05-quantization-compression.md
+    - Stage 6 — Kernel Engineering: stage-06-kernel-engineering.md
+    - Stage 7 — Distributed Inference: stage-07-distributed-inference.md
+    - Stage 8 — Speculative Decoding: stage-08-speculative-decoding.md
+    - Stage 9 — Multi-Node & Interconnects: stage-09-multi-node-interconnects.md
+    - Stage 10 — Cluster Orchestration: stage-10-cluster-orchestration.md
+    - Stage 11 — Gateways, Routing & Observability: stage-11-gateways-routing-observability.md
+    - Stage 12 — Benchmarks & Teardowns: stage-12-benchmarks-teardowns.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/manmeet3591
+  analytics:
+    provider: google
+
+copyright: Copyright &copy; 2026 Manmeet Singh
