@@ -4,4 +4,20 @@
          <loc>https://manmeet3591.github.io/ai-infra-roadmap/</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
+    <url>
+         <loc>https://manmeet3591.github.io/ai-infra-roadmap/stage-01-systems-gpu-foundations/</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://manmeet3591.github.io/ai-infra-roadmap/stage-02-transformer-inference-physics/</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://manmeet3591.github.io/ai-infra-roadmap/stage-03-serving-engines-batching/</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://manmeet3591.github.io/ai-infra-roadmap/stage-04-kv-cache-memory/</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
 </urlset>
